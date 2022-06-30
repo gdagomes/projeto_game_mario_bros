@@ -1,0 +1,35 @@
+@import url(./global.css);
+
+#header, .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header{
+    height: 15%;
+    width: 100%;
+}
+
+.menu{
+    height: 50%;
+    width: 80%;
+
+}
+
+.btnOpc{
+    font-size: 12px;
+    height: 100%;
+    padding: 10px;
+}
+
+.menu li + li{
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+    font-size: 12px;
+    letter-spacing: 1px;
+}

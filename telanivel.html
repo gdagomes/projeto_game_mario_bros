@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <link rel="stylesheet" href="./assets/css/styleinicial.css">
+    <link rel="stylesheet" href="./assets/css/stylenivelandpersonagem.css">
+
+    <script defer src="./assets/js/paginanivelandpersonagem.js"></script>
+    
+</head>
+<body>
+
+    <header id="header">
+        <ul class="menu">
+            
+            <li class="btnOpc" id="btnOpcNivel" value="Nivel"><a href="./telainicial.html">Inicio</a></li>
+            <li class="btnOpc" id="btnOpcNivel" value="Nivel"><a href="./telanivel.html">Nivel</a></li>
+            <li class="btnOpc" id="btnOpcPersonagem" value="Personagem"><a href="./telapersonagem.html">Personagens</a></li>
+            <li class="btnOpc" id="btnOpcComoJogar" value="Como Jogar"><a href="./comojogar.html">Como jogar</a></li>
+        </ul>
+    </header>
+
+    <main class="container">
+        <div class="contentNiveis">
+            <div class="card">
+                <img src="/assets/img/marioeasy.webp" alt="mariobros pulando">
+                <button button id="escNivelfacil" value='facil'>Fácil</button>
+            </div>
+            <div class="card">
+                <img src="/assets/img/mariomedio.png" alt="mariobros pose de poder">
+                <button button id="escNivelMedio" value='medio'>Médio</button>
+            </div>
+            <div class="card">
+                <img src="/assets/img/mariohard.png" alt="mariobros soltando bola de fogo">
+                <button id="escNivelDificil" value='dificil'>Difícil</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>Desenvolvido por Magda Gomes</p>
+    </footer>
+</body>
+</html>

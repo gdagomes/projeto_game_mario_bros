@@ -1,0 +1,208 @@
+@import url('./global.css');
+
+body{
+    background-image: var(--colorsky);
+    overflow: hidden;
+}
+
+/* Container do jogo */
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-bottom: 30px solid rgb(46, 190, 46);
+}
+
+.container>p{
+    top: 25px;
+    left: 20px;
+    z-index: 5;
+}
+
+/* Configs gerais para o personagem, as nuvens e o obstáculo*/
+.clouds, .mario, .pipe, .container>p, .buttons, .gameOver{
+    position: absolute;
+}
+
+.buttons{
+    right: 20px;
+    top: 24px;
+    z-index: 6;
+}
+
+#btnreiniciar, #btnsair{
+    padding: 10px;
+    color: #111;
+    background-color: var(--colorouro);
+    border-radius: 5px;
+}
+
+.clouds, .mario, .pipe, .btnsair, .container>p, .btnReiniciar, .gameOver{
+    position: absolute;
+}
+
+.mario, .pipe{
+    bottom: 0;
+}
+
+/* Nuvens */
+.clouds-1{
+    width: 600px;
+    top: 25px;
+    animation: linear infinite 60s clouds-moviment1;
+    z-index: 3;
+}
+
+.clouds-2{
+    width: 400px;
+    top: 100px;
+    animation: linear infinite 90s clouds-moviment2;
+    z-index: 2;
+}
+
+.clouds-3{
+    width: 200px;
+    top: 280px;  
+    animation: linear infinite 60s clouds-moviment3;
+    z-index: 1;
+}
+
+/* Personagem */
+
+.mario{
+    left: 15px;
+    height: 100px;
+    width: 75px; 
+    z-index: 4;
+}
+
+/* Obstáculo */
+.pipe{
+    height: 70px;
+    right: 0;
+}
+
+.gameOver{
+    position: absolute;
+    left: calc((50vw)/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+    width: 50vw;
+    height: 100%;
+    font-size: 80px;
+    color: red;
+    z-index: 5;
+}
+
+.btnsair, .btnReiniciar{
+    padding: 10px;
+    top: 20px;
+    background-color: var(--colorouro);
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/*Botão Reiniciar*/
+.btnReiniciar{
+    display: inline-block;
+    top: 20px;
+    right: 100px;
+    align-items: center;
+    
+}
+
+.btnReiniciar:hover{
+    cursor: pointer;
+}
+
+.btnsair{
+    right: 20px;
+}
+
+/* Class Animation */
+.mario-jump{
+    animation: mario-jump 500ms ease-out;
+}
+
+/*Levels Animation Pipe*/
+.pipe-moviment-easy{
+    animation: pipe-moviment 4s linear infinite;
+}
+
+.pipe-moviment-medium{
+    animation: pipe-moviment 2s linear infinite;
+}
+
+.pipe-moviment-hard{
+    animation: pipe-moviment 1s linear infinite;
+}
+
+
+/* Animation */
+
+@keyframes mario-jump {
+
+    0%{
+        bottom:0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{
+        bottom:0;
+    }
+    
+}
+
+@keyframes pipe-moviment{
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+
+@keyframes clouds-moviment1{
+    from{
+        right: -600px
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes clouds-moviment2{
+    from{
+        right: -400px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes clouds-moviment3{
+    from{
+        right: -200px;
+    }
+
+    to{
+        right: 100%;
+    }
+}

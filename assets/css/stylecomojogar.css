@@ -1,0 +1,23 @@
+@import url('./global.css');
+@import url('./styleheader.css');
+
+.comojogar{
+    text-align: center;
+    align-self: center;
+    width: 60vw;
+    height: 60vh;
+    margin-bottom: 20px;
+    background-color: rgba(210, 210, 211, 0.186);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.comojogar h1{
+    margin-top: 20px;
+}
+
+.comojogar p{
+    text-align: justify;
+    margin-top: 20px;
+}
+

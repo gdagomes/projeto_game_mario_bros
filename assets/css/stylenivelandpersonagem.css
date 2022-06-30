@@ -1,0 +1,39 @@
+@import url(./global.css);
+@import url(./styleheader.css);
+
+.contentNiveis, .contentPersonagens{
+    width: 80%;
+    height: 70%;
+    background-color: rgba(255, 246, 246, 0.053) ;
+    max-width: 800px;
+
+}
+
+
+.contentNiveis, .contentPersonagens, .card{
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.card{
+    flex-direction: column;
+    height: 80%;
+    width: 200px;
+    border: var(--colorouro) solid  2px;
+}
+
+
+.card img{
+    height: 120px;
+}
+
+/*Animação JS*/
+.cardAnimmation{
+    height: 200px;
+    transform: scale(1.2);
+    filter: drop-shadow(30px 10px 4px rgba(0,0,0,.5));
+}
