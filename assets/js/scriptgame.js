@@ -122,5 +122,5 @@ btnreiniciar.addEventListener('click', ()=>{
 });
 
 btnsair.addEventListener('click', ()=>{
-    window.location = '../telainicial.html';
+    window.location = '../index.html';
 });
