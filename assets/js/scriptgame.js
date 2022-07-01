@@ -38,7 +38,7 @@ const jump = () => {
 }
 
 const setImg = () => {
-    let img = listaObstaculo[Math.floor(Math.random() * 2)];
+    let img = listaObstaculo[Math.floor(Math.random() * 3)];
 
     OBSTACULO.src = `./assets/img/${img}`;
 }
