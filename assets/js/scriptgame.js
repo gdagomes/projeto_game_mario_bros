@@ -9,7 +9,7 @@ let btnsair = document.querySelector('#btnsair');
 let score = document.querySelector('#score');
 
 var pontuacao = 0;
-let listaObstaculo = ['pipe.png','Goomba-walks.gif'];
+let listaObstaculo = ['pipe.png','Goomba-walks.gif', 'turtle.gif'];
 
 // insere a imagem do personagem escolhido pelo usuario
 MARIO.src = `./assets/img/${localStorage.personagem}.gif`
